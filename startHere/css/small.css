@@ -4,3 +4,110 @@ html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
 /*  apply a natural box layout model to all elements  */
 * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
+/* color vars */
+:root {
+  --yellow: rgb(196, 143, 0);
+  --lyellow: rgb(235, 187, 58);;
+  --black: #1f1f1f;
+  --dgray: rgb(44, 44, 44);
+}
+
+body {
+  font-family: 'Nunito', sans-serif;
+  font-size: 16px;
+  color: var(--black)
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  padding: .5rem 2vw;
+  align-items: center;
+  max-width: 60rem;
+}
+
+header h1 {
+  font-size: 1rem;
+  padding-left: .5rem;
+}
+
+main {
+  margin: 1rem 2%;
+  max-width: 60rem;
+
+}
+
+section.who {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.2rem;
+}
+
+section.who p {
+  margin: 0;
+}
+
+/* about section */
+section.about {
+  display: flex;
+  background-color: var(--yellow);
+  padding: .5rem;
+  border-radius: 4px;
+}
+
+section.about div {
+  margin-left: .5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%
+}
+
+section.about p {
+  margin: 0;
+}
+
+section.about ul {
+  margin: 0;
+  padding: 0;
+}
+
+section.about div ul {
+  background-color: var(--lyellow);
+  border-radius: 10px;
+  padding: .5rem;
+  list-style-position: inside;
+  box-shadow: 0 0 10px var(--dgray);
+}
+
+h2 {
+  font-size: 1rem;
+}
+
+/* assignments section */
+.assignments {
+  padding: 1rem 2%;
+}
+
+.assignments a {
+  display: block;
+  padding: .8rem;
+  border:  1px solid var(--black);
+  margin-bottom: .5rem;
+  border-radius: 5px;
+  text-decoration: none;
+  background-color: var(--yellow);
+  color: black;
+  transition: backgroud 0.3s ease;
+
+}
+
+.assignments a:hover {
+  background-color: var(--lyellow);
+}
+
+footer {
+  text-align: center;
+  max-width: 60rem;
+}
